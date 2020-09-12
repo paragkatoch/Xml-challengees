@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="#C2A872">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:paddingTop="15dp" android:paddingBottom="15dp"
+        tools:context=".MainActivity">
+
+        <LinearLayout android:id="@+id/actionBar" android:layout_width="match_parent"
+            android:layout_height="50dp" android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp" android:layout_marginRight="10dp"
+            android:background="@drawable/action_bar" android:gravity="center_vertical"
+            android:paddingStart="30dp">
+
+            <ImageView android:id="@+id/menuBar" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:background="@drawable/menu_background"
+                app:srcCompat="@drawable/menu" />
+
+            <TextView android:id="@+id/actionBarTittle" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:paddingStart="30dp"
+                android:text="Workspace" android:textColor="#FFFFFF" android:textSize="20sp"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+
+        <TextView android:id="@+id/motivate" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp" android:layout_marginRight="30dp"
+            android:background="#663300" android:paddingStart="10dp" android:paddingTop="10dp"
+            android:paddingBottom="10dp" android:text="Lets get started with a free account !"
+            android:textColor="#FFFFFF" android:textSize="16sp" android:textStyle="italic" />
+
+        <LinearLayout android:id="@+id/terms_and_conditions" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp" android:orientation="horizontal">
+
+            <TextView android:id="@+id/terms" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_marginStart="25dp"
+                android:text="We respect your privacy so we have a strict "
+                android:textSize="10sp" />
+
+            <TextView android:id="@+id/conditions" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="privacy policy"
+                android:textColor="#0091FF" android:textSize="10sp" />
+
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/info" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp" android:layout_marginRight="30dp"
+            android:layout_marginBottom="50dp" android:background="@drawable/layout"
+            android:orientation="vertical" android:paddingLeft="15dp" android:paddingRight="15dp">
+
+            <TextView android:id="@+id/nameText" style="@style/preStyle"
+                android:layout_marginStart="5dp" android:layout_marginTop="30dp"
+                android:text="* Name" />
+
+            <EditText android:id="@+id/name" style="@style/EditText" android:layout_marginTop="10dp"
+                android:background="@drawable/edit_text" />
+
+            <TextView android:id="@+id/emailText" style="@style/preStyle"
+                android:layout_marginStart="5dp" android:text="* Email" />
+
+            <EditText android:id="@+id/email" style="@style/EditText"
+                android:layout_marginTop="10dp" android:background="@drawable/edit_text" />
+
+            <TextView android:id="@+id/numText" style="@style/preStyle"
+                android:layout_marginStart="5dp" android:text="Mobile Number (optional)" />
+
+            <EditText android:id="@+id/num" style="@style/EditText" android:layout_marginTop="10dp"
+                android:background="@drawable/edit_text" />
+
+            <TextView android:id="@+id/passwordText" style="@style/preStyle"
+                android:layout_marginStart="5dp" android:text="* Password" />
+
+            <EditText android:id="@+id/password" style="@style/EditText"
+                android:layout_marginTop="10dp" android:background="@drawable/edit_text" />
+
+            <TextView android:id="@+id/passwordInfo" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_marginStart="15dp"
+                android:layout_marginTop="8dp" android:text="~Password must contain 8 letters"
+                android:textSize="12sp" />
+
+            <TextView android:id="@+id/aboutUserText" style="@style/preStyle"
+                android:layout_marginStart="5dp" android:text="Tell Us About Yourself (optional)" />
+
+            <EditText android:id="@+id/aboutUser" style="@style/EditText"
+                android:layout_height="40dp" android:layout_marginTop="10dp"
+                android:hint=":We would love to hear from you" android:paddingStart="20dp"
+                android:paddingEnd="15dp" android:textColorHint="#9A9A9A" />
+
+            <CheckBox android:id="@+id/noitfy" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_marginTop="15dp"
+                android:text="I want to receive notifications about amazing deal offers."
+                android:textColor="#474747" android:textSize="12sp"
+                android:theme="@style/WhiteCheck" />
+
+            <Button android:id="@+id/signUp" android:layout_width="120dp"
+                android:layout_height="35dp" android:layout_gravity="center"
+                android:layout_marginTop="40dp" android:layout_marginBottom="40dp"
+                android:background="@drawable/signup" android:text="SIGN UP"
+                android:textColor="#fff" android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
