@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView android:id="@+id/ProfileImage" android:layout_width="match_parent"
+            android:layout_height="460dp" android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/image" />
+
+        <ImageView android:id="@+id/IDK" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_marginEnd="35dp"
+            android:layout_marginBottom="32dp" app:layout_constraintBottom_toTopOf="@+id/UserInfo"
+            app:layout_constraintEnd_toEndOf="parent" app:srcCompat="@drawable/ic_icon" />
+
+        <ImageView android:id="@+id/MenuBar" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp" android:background="@drawable/ic_baseline_short_text_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/UserInfo"
+            android:layout_width="match_parent" android:layout_height="358dp"
+            android:layout_marginTop="408dp" android:background="@drawable/profile_info"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView android:id="@+id/ScrollBar" android:layout_width="50dp"
+                android:layout_height="5dp" android:layout_marginStart="168dp"
+                android:layout_marginTop="12dp" android:background="@drawable/idk"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView android:id="@+id/UserName" android:layout_width="wrap_content"
+                android:layout_height="36dp" android:layout_marginStart="32dp"
+                android:layout_marginTop="36dp" android:fontFamily="@font/montserrat"
+                android:text="Emily Broad" android:textColor="#ffffff" android:textSize="28dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ScrollBar" />
+
+            <TextView android:id="@+id/UserAge" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_marginTop="58dp"
+                android:layout_marginEnd="56dp" android:fontFamily="@font/montserrat"
+                android:text="21 yrs" android:textColor="#ffffff" android:textSize="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView android:id="@+id/AboutUser" android:layout_width="326dp"
+                android:layout_height="49dp" android:layout_marginStart="36dp"
+                android:layout_marginTop="24dp" android:fontFamily="@font/montserrat"
+                android:letterSpacing="0.05" android:lineSpacingExtra="1.2dp"
+                android:text="Wildlife Photographer | Avid Traveller | Social Activist | Chairman Azio.co"
+                android:textColor="#ffffff" android:textSize="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/UserName" />
+
+            <ImageView android:id="@+id/Location_item" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_marginStart="35dp"
+                app:layout_constraintBottom_toBottomOf="@+id/UserLocation"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/UserLocation"
+                app:srcCompat="@drawable/location_icon" />
+
+            <TextView android:id="@+id/UserLocation" style="@style/text"
+                android:layout_marginStart="8dp" android:layout_marginTop="26dp"
+                android:fontFamily="@font/montserrat" android:letterSpacing="0.21"
+                android:text="Brooklyn, New York" android:textSize="13dp"
+                app:layout_constraintStart_toEndOf="@id/Location_item"
+                app:layout_constraintTop_toBottomOf="@id/AboutUser" />
+
+            <TextView android:id="@+id/MessageButton" android:layout_width="172dp"
+                android:layout_height="37dp" android:layout_marginStart="15dp"
+                android:layout_marginTop="28dp" android:background="@drawable/buttons"
+                android:gravity="center" android:text="Message" android:textColor="#ffffff"
+                android:textSize="18dp" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/UserLocation" />
+
+            <TextView android:id="@+id/FollowButton" android:layout_width="172dp"
+                android:layout_height="37dp" android:layout_marginTop="28dp"
+                android:layout_marginEnd="19dp" android:background="@drawable/buttons"
+                android:gravity="center" android:text="Follow +" android:textColor="#ffffff"
+                android:textSize="18dp" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/UserLocation" />
+
+
+            <LinearLayout android:id="@+id/UserLinks" android:layout_width="360dp"
+                android:layout_height="wrap_content" android:layout_marginStart="36dp"
+                android:layout_marginTop="23dp" android:gravity="center_vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/MessageButton">
+
+                <ImageView android:id="@+id/LeftArrow" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/ic_arrow_back" />
+
+                <ImageView android:id="@+id/BasketBall" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_marginStart="35dp"
+                    app:srcCompat="@drawable/ic_basketball" />
+
+                <ImageView android:id="@+id/Linkedin" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_marginStart="30dp"
+                    app:srcCompat="@drawable/ic_linkedin" />
+
+                <ImageView android:id="@+id/Twitter" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_marginStart="30dp"
+                    app:srcCompat="@drawable/ic_twitter123" />
+
+                <ImageView android:id="@+id/Pinterest" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_marginStart="30dp"
+                    app:srcCompat="@drawable/ic_pinterest" />
+
+                <ImageView android:id="@+id/RightArrow" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_marginStart="35dp"
+                    app:srcCompat="@drawable/ic_arrow_forward" />
+
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
