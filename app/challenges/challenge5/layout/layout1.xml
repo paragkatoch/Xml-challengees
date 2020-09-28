@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/DrawerButton"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginEnd="92dp"
+            app:layout_constraintBottom_toBottomOf="@+id/CRETA"
+            app:layout_constraintEnd_toStartOf="@+id/CRETA"
+            app:layout_constraintTop_toTopOf="@+id/CRETA"
+            app:srcCompat="@drawable/menubar" />
+
+        <TextView
+            android:id="@+id/CRETA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="164dp"
+            android:layout_marginTop="76dp"
+            android:fontFamily="@font/futuramedium"
+            android:lineSpacingExtra="1.23dp"
+            android:text="CRETA"
+            android:textColor="#000000"
+            android:textSize="35dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/MyPlaylist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="252dp"
+            android:fontFamily="@font/futurabook"
+            android:text="My Playlist"
+            android:textColor="#000000"
+            android:textSize="29dp"
+            app:layout_constraintBottom_toBottomOf="@+id/CRETA"
+            app:layout_constraintStart_toEndOf="@+id/CRETA"
+            app:layout_constraintTop_toTopOf="@+id/CRETA" />
+
+        <TextView
+            android:id="@+id/Albums"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:fontFamily="@font/futurabook"
+            android:text="Albums"
+            android:textColor="#000000"
+            android:textSize="29dp"
+            app:layout_constraintBottom_toBottomOf="@+id/MyPlaylist"
+            app:layout_constraintStart_toEndOf="@+id/MyPlaylist"
+            app:layout_constraintTop_toTopOf="@+id/MyPlaylist" />
+
+        <TextView
+            android:id="@+id/OfflineSongs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="92dp"
+            android:fontFamily="@font/futurabook"
+            android:text="Offline Songs"
+            android:textColor="#000000"
+            android:textSize="29dp"
+            app:layout_constraintBottom_toBottomOf="@+id/Albums"
+            app:layout_constraintStart_toEndOf="@+id/Albums"
+            app:layout_constraintTop_toTopOf="@+id/Albums" />
+
+
+        <ImageView
+            android:id="@+id/SearchBar"
+            android:layout_width="457dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="67dp"
+            android:layout_marginEnd="181dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/search" />
+
+        <TextView
+            android:id="@+id/Trending"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:fontFamily="@font/futuramedium"
+            android:lineSpacingExtra="2.24dp"
+            android:text="Trending"
+            android:textColor="#000000"
+            android:textSize="32dp"
+            app:layout_constraintStart_toStartOf="@+id/CRETA"
+            app:layout_constraintTop_toBottomOf="@+id/CRETA" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/TrendingList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="52dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Trending">
+
+            <View
+                android:id="@+id/Song1"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="165dp"
+                android:background="@drawable/picture"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/Song2"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="75dp"
+                android:background="@drawable/picture"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/Song1"
+                app:layout_constraintTop_toTopOf="@+id/Song1" />
+
+            <View
+                android:id="@+id/Song3"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="60dp"
+                android:background="@drawable/picture"
+                app:layout_constraintBottom_toBottomOf="@+id/Song2"
+                app:layout_constraintStart_toEndOf="@+id/Song2"
+                app:layout_constraintTop_toTopOf="@+id/Song2" />
+
+            <View
+                android:id="@+id/Song4"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="67dp"
+                android:background="@drawable/picture"
+                app:layout_constraintBottom_toBottomOf="@+id/Song3"
+                app:layout_constraintStart_toEndOf="@+id/Song3"
+                app:layout_constraintTop_toTopOf="@+id/Song3" />
+
+            <View
+                android:id="@+id/Song5"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="67dp"
+                android:background="@drawable/picture"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/Song4"
+                app:layout_constraintTop_toTopOf="@+id/Song4" />
+
+            <View
+                android:id="@+id/Song6"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="67dp"
+                android:background="@drawable/picture"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/Song5"
+                app:layout_constraintTop_toTopOf="@+id/Song5" />
+
+            <View
+                android:id="@+id/Song7"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="60dp"
+                android:background="@drawable/picture"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/Song6"
+                app:layout_constraintTop_toTopOf="@+id/Song6" />
+
+            <View
+                android:id="@+id/Song8"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="75dp"
+                android:background="@drawable/picture"
+                app:layout_constraintBottom_toBottomOf="@+id/Song7"
+                app:layout_constraintStart_toEndOf="@+id/Song7"
+                app:layout_constraintTop_toTopOf="@+id/Song7" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/RP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="88dp"
+            android:fontFamily="@font/futuramedium"
+            android:lineSpacingExtra="2.24dp"
+            android:text="Recently Played"
+            android:textColor="#000000"
+            android:textSize="32dp"
+            app:layout_constraintStart_toStartOf="@+id/Trending"
+            app:layout_constraintTop_toBottomOf="@+id/TrendingList" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/RPList"
+            android:layout_width="1920dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="88dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/RP">
+
+            <View
+                android:id="@+id/Recent1"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="165dp"
+                android:background="@drawable/picture"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/Recent2"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="75dp"
+                android:background="@drawable/picture"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/Recent1"
+                app:layout_constraintTop_toTopOf="@+id/Recent1" />
+
+            <View
+                android:id="@+id/Recent3"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="60dp"
+                android:background="@drawable/picture"
+                app:layout_constraintBottom_toBottomOf="@+id/Recent2"
+                app:layout_constraintStart_toEndOf="@+id/Recent2"
+                app:layout_constraintTop_toTopOf="@+id/Recent2" />
+
+            <View
+                android:id="@+id/Recent4"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="67dp"
+                android:background="@drawable/picture"
+                app:layout_constraintBottom_toBottomOf="@+id/Recent3"
+                app:layout_constraintStart_toEndOf="@+id/Recent3"
+                app:layout_constraintTop_toTopOf="@+id/Recent3" />
+
+            <View
+                android:id="@+id/Recent5"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="67dp"
+                android:background="@drawable/picture"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/Recent4"
+                app:layout_constraintTop_toTopOf="@+id/Recent4" />
+
+            <View
+                android:id="@+id/Recent6"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="67dp"
+                android:background="@drawable/picture"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/Recent5"
+                app:layout_constraintTop_toTopOf="@+id/Recent5" />
+
+            <View
+                android:id="@+id/Recent7"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="60dp"
+                android:background="@drawable/picture"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/Recent6"
+                app:layout_constraintTop_toTopOf="@+id/Recent6" />
+
+            <View
+                android:id="@+id/Recent8"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="75dp"
+                android:background="@drawable/picture"
+                app:layout_constraintBottom_toBottomOf="@+id/Recent7"
+                app:layout_constraintStart_toEndOf="@+id/Recent7"
+                app:layout_constraintTop_toTopOf="@+id/Recent7" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/SongInfo"
+            android:layout_width="1859dp"
+            android:layout_height="210dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="73dp"
+            android:background="@drawable/background1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/RPList">
+
+            <View
+                android:id="@+id/CurrentImage"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginStart="136dp"
+                android:background="@drawable/picture"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/SongTittle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="68dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/futuramedium"
+                android:text="Main Rahoon Ya Na Rahoon"
+                android:textColor="#000000"
+                android:textSize="30dp"
+                app:layout_constraintStart_toEndOf="@+id/CurrentImage"
+                app:layout_constraintTop_toTopOf="@+id/CurrentImage" />
+
+            <TextView
+                android:id="@+id/SingerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:fontFamily="@font/futuramedium"
+                android:text="Armaan Mallik - Travel Diaries"
+                android:textColor="#000000"
+                android:textSize="23dp"
+                app:layout_constraintStart_toStartOf="@+id/SongTittle"
+                app:layout_constraintTop_toBottomOf="@+id/SongTittle" />
+
+            <ImageView
+                android:id="@+id/PlayButton"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginEnd="128dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="@+id/CurrentImage"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/CurrentImage"
+                app:srcCompat="@drawable/play" />
+
+            <ImageView
+                android:id="@+id/Time"
+                android:layout_width="614dp"
+                android:layout_height="34dp"
+                android:layout_marginTop="117dp"
+                android:layout_marginEnd="110dp"
+                app:layout_constraintEnd_toStartOf="@+id/PlayButton"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/time" />
+
+            <TextView
+                android:id="@+id/CurrentTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/futurabook"
+                android:letterSpacing="0.78dp"
+                android:text="1:12"
+                android:textSize="26dp"
+                app:layout_constraintBottom_toTopOf="@+id/Time"
+                app:layout_constraintStart_toStartOf="@+id/Time" />
+
+            <TextView
+                android:id="@+id/TotalTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/futurabook"
+                android:letterSpacing="0.78dp"
+                android:text="4:20"
+                android:textSize="26dp"
+                app:layout_constraintBottom_toTopOf="@+id/Time"
+                app:layout_constraintEnd_toEndOf="@+id/Time" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

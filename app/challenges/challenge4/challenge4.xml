@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <HorizontalScrollView android:layout_width="match_parent" android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_margin="10dp"
+            android:background="#FFF0EC">
+
+            <View android:id="@+id/marginLine1" android:layout_width="3dp"
+                android:layout_height="0dp" android:background="#FFa7C1"
+                app:layout_constraintBottom_toBottomOf="@+id/Takeoff_Date"
+                app:layout_constraintEnd_toEndOf="@+id/to"
+                app:layout_constraintStart_toStartOf="@+id/to"
+                app:layout_constraintTop_toTopOf="@+id/Startup" />
+
+            <View android:id="@+id/marginLine2" android:layout_width="3dp"
+                android:layout_height="0dp" android:background="#FFa7C1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/Boarding_ID"
+                app:layout_constraintStart_toEndOf="@+id/Destination"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView android:id="@+id/corner1" android:layout_width="237dp"
+                android:layout_height="75dp" android:background="@drawable/corner"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView android:id="@+id/Expedia" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_marginStart="63dp"
+                android:layout_marginTop="15dp" android:fontFamily="@font/segoeprint"
+                android:text="Expedia" android:textColor="#FFFFFF" android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="@+id/corner1"
+                app:layout_constraintTop_toTopOf="@+id/corner1" />
+
+            <ImageView android:id="@+id/imageView2" android:layout_width="22dp"
+                android:layout_height="22dp" android:layout_marginStart="6dp"
+                android:layout_marginBottom="18dp" android:rotation="58"
+                app:layout_constraintBottom_toBottomOf="@+id/corner1"
+                app:layout_constraintStart_toEndOf="@+id/Expedia" app:srcCompat="@drawable/aero" />
+
+            <TextView android:id="@+id/corner2" android:layout_width="237dp"
+                android:layout_height="75dp" android:background="@drawable/corner"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView android:id="@+id/Se_No" style="@style/Bold" android:layout_marginTop="18dp"
+                android:fontFamily="@font/montserrat" android:text="Sequence Number"
+                android:textSize="9dp" android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="@+id/B_ID"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView android:id="@+id/Sequence_No" style="@style/Bold"
+                android:layout_marginStart="9dp" android:layout_marginTop="0dp"
+                android:fontFamily="@font/montserrat" android:text="10" android:textSize="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/Se_No"
+                app:layout_constraintStart_toEndOf="@+id/Se_No" />
+
+            <TextView android:id="@+id/G_No" style="@style/Bold" android:layout_marginTop="134dp"
+                android:fontFamily="@font/montserrat" android:text="Gate Number"
+                android:textSize="12dp" android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="@+id/Name"
+                app:layout_constraintTop_toBottomOf="@+id/Name" />
+
+            <TextView android:id="@+id/Gate_No" style="@style/Bold"
+                android:layout_marginStart="22dp" android:text="7B"
+                app:layout_constraintBottom_toBottomOf="@+id/G_No"
+                app:layout_constraintStart_toEndOf="@+id/G_No" />
+
+            <TextView android:id="@+id/B_Time" style="@style/Bold" android:layout_marginStart="45dp"
+                android:layout_marginTop="0dp" android:layout_marginEnd="30dp"
+                android:fontFamily="@font/montserrat" android:text="Boarding Time"
+                android:textSize="12dp" android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/B_ID"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/B_ID"
+                app:layout_constraintTop_toTopOf="@+id/B_ID" />
+
+            <TextView android:id="@+id/Boarding_time" style="@style/Bold" android:text="0900"
+                app:layout_constraintBottom_toBottomOf="@+id/Boarding_ID"
+                app:layout_constraintStart_toStartOf="@+id/B_Time"
+                app:layout_constraintTop_toTopOf="@+id/Boarding_ID" />
+
+            <TextView android:id="@+id/Flight" style="@style/Bold" android:layout_marginTop="27dp"
+                android:fontFamily="@font/montserrat" android:text="Flight ID"
+                android:textSize="12dp" android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="@+id/Boarding_ID"
+                app:layout_constraintTop_toBottomOf="@+id/Boarding_ID" />
+
+            <TextView android:id="@+id/Flight_ID" style="@style/Bold" android:text="142B"
+                app:layout_constraintStart_toStartOf="@+id/Flight"
+                app:layout_constraintTop_toBottomOf="@+id/Flight" />
+
+            <TextView android:id="@+id/S_No" style="@style/Bold" android:layout_marginTop="27dp"
+                android:layout_marginEnd="166dp" android:fontFamily="@font/montserrat"
+                android:text="Seat Number" android:textSize="14dp" android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/Flight"
+                app:layout_constraintTop_toBottomOf="@+id/Flight_ID" />
+
+            <TextView android:id="@+id/Seat_No" style="@style/Bold" android:text="23B"
+                app:layout_constraintStart_toStartOf="@+id/S_No"
+                app:layout_constraintTop_toBottomOf="@+id/S_No" />
+
+            <TextView android:id="@+id/B_ID" style="@style/Bold" android:layout_marginStart="113dp"
+                android:layout_marginTop="0dp" android:fontFamily="@font/montserrat"
+                android:text="Boarding ID" android:textSize="12dp" android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/Destination_Code"
+                app:layout_constraintStart_toEndOf="@+id/Destination_Code"
+                app:layout_constraintTop_toTopOf="@+id/Destination_Code" />
+
+            <TextView android:id="@+id/Boarding_ID" style="@style/Bold" android:text="BT371828"
+                app:layout_constraintStart_toStartOf="@+id/B_ID"
+                app:layout_constraintTop_toBottomOf="@+id/B_ID" />
+
+            <TextView android:id="@+id/Landing_Date" style="@style/Bold"
+                android:fontFamily="@font/montserrat" android:text="21JUN21" android:textSize="10dp"
+                android:textStyle="normal" app:layout_constraintEnd_toEndOf="@+id/Landing_Time"
+                app:layout_constraintStart_toStartOf="@+id/Landing_Time"
+                app:layout_constraintTop_toTopOf="@+id/Takeoff_Date" />
+
+            <TextView android:id="@+id/Landing_Time" style="@style/Bold"
+                android:layout_marginTop="0dp" android:fontFamily="@font/montserrat"
+                android:text="16 : 20" android:textSize="12dp" android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="@+id/Destination"
+                app:layout_constraintStart_toStartOf="@+id/Destination"
+                app:layout_constraintTop_toTopOf="@+id/Takeoff_Time" />
+
+            <TextView android:id="@+id/Destination_Code" style="@style/Bold"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginStart="182dp" android:layout_marginTop="0dp"
+                android:text="IGIA" android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@+id/to"
+                app:layout_constraintStart_toEndOf="@+id/Startup_Code"
+                app:layout_constraintTop_toTopOf="@+id/to" />
+
+            <TextView android:id="@+id/Destination" style="@style/Bold"
+                android:layout_marginTop="0dp" android:fontFamily="@font/montserrat"
+                android:text="(New Delhi)" android:textSize="12dp" android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="@+id/Destination_Code"
+                app:layout_constraintStart_toStartOf="@+id/Destination_Code"
+                app:layout_constraintTop_toTopOf="@+id/Startup" />
+
+
+            <TextView android:id="@+id/to" style="@style/Bold" android:layout_marginTop="0dp"
+                android:fontFamily="@font/montserrat" android:text="to" android:textSize="12dp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/Startup_Code"
+                app:layout_constraintEnd_toStartOf="@+id/Destination_Code"
+                app:layout_constraintStart_toEndOf="@+id/Startup_Code"
+                app:layout_constraintTop_toTopOf="@+id/Startup_Code" />
+
+            <TextView android:id="@+id/Startup_Code" style="@style/Bold"
+                android:layout_marginStart="110dp" android:layout_marginTop="0dp" android:text="CCU"
+                android:textSize="15dp" app:layout_constraintBottom_toBottomOf="@+id/Name_Text"
+                app:layout_constraintStart_toEndOf="@+id/Name_Text"
+                app:layout_constraintTop_toTopOf="@+id/Name_Text" />
+
+            <TextView android:id="@+id/Startup" style="@style/Bold" android:layout_marginTop="0dp"
+                android:fontFamily="@font/montserrat" android:text="(Kolkata)"
+                android:textSize="12dp" android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@+id/Name"
+                app:layout_constraintEnd_toEndOf="@+id/Startup_Code"
+                app:layout_constraintStart_toStartOf="@+id/Startup_Code"
+                app:layout_constraintTop_toTopOf="@+id/Name" />
+
+            <TextView android:id="@+id/Takeoff_Time" style="@style/Bold"
+                android:layout_marginTop="25dp" android:fontFamily="@font/montserrat"
+                android:text="13 : 10" android:textSize="12dp" android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="@+id/Startup"
+                app:layout_constraintStart_toStartOf="@+id/Startup"
+                app:layout_constraintTop_toBottomOf="@+id/Startup" />
+
+            <TextView android:id="@+id/Takeoff_Date" style="@style/Bold"
+                android:layout_marginTop="27dp" android:fontFamily="@font/montserrat"
+                android:text="21JUN21" android:textSize="10dp" android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="@+id/Takeoff_Time"
+                app:layout_constraintStart_toStartOf="@+id/Takeoff_Time"
+                app:layout_constraintTop_toBottomOf="@+id/Takeoff_Time" />
+
+            <TextView android:id="@+id/Name_Text" style="@style/Bold"
+                android:layout_marginStart="30dp" android:layout_marginTop="31dp"
+                android:fontFamily="@font/montserrat" android:text="Passenger Name"
+                android:textSize="12dp" android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/corner1" />
+
+            <TextView android:id="@+id/Name" style="@style/Bold" android:layout_marginTop="9dp"
+                android:text="Raman Mishra" android:textSize="14dp"
+                app:layout_constraintStart_toStartOf="@+id/Name_Text"
+                app:layout_constraintTop_toBottomOf="@+id/Name_Text" />
+
+            <ImageView android:id="@+id/imageView" android:layout_width="280dp"
+                android:layout_height="67dp" android:layout_marginTop="283dp"
+                android:layout_marginBottom="62dp" android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/Destination"
+                app:layout_constraintStart_toStartOf="@+id/Startup"
+                app:layout_constraintTop_toTopOf="parent" app:srcCompat="@drawable/barcode" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </HorizontalScrollView>
+</ScrollView>
